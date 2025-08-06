@@ -24,8 +24,8 @@ searchInput.addEventListener("keypress", (e) => {
 });
 
 // Вывод информации о теге
-function showTagInfo(tagName) {
-  if (tagsDB[tagName]) {
-    tagName.textContent = `<${tagName}>`;
+function showTagInfo(tag) {
+  if (tagsDB[tag]) {
+    tagName.textContent = `<${tag}>`;
   }
 }
