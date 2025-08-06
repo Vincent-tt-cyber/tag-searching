@@ -99,6 +99,7 @@ searchInput.addEventListener("keypress", (e) => {
 // Вывод информации о теге
 function showTagInfo(tag) {
   if (tagsDB[tag]) {
+    document.querySelector(".content").style.display = "block";
     tagName.textContent = `<${tag}>`;
     tagDescription.textContent = tagsDB[tag].description;
     codeExample.textContent = tagsDB[tag].example;
